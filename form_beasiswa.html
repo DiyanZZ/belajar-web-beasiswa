@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Beasiswa</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+    <h1>Form Beasiswa</h1>
+    <form action="submit_beasiswa.php" method="post" enctype="multipart/form-data">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="noHp">Nomor HP (format number saja):</label>
+        <input type="tel" id="noHp" name="noHp" pattern="[0-9]+" required><br>
+
+        <label for="semester">Semester Saat Ini:</label>
+            <select id="semester" name="semester" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+            <br>
+
+        <label for="ipk">IPK Terakhir:</label>
+        <input type="text" id="ipk" name="ipk" value="3.4" readonly><br>
+
+        <label for="beasiswa">Pilihan Beasiswa:</label>
+            <select id="beasiswa" name="beasiswa" required>
+                <option value="BeasiswaAkademik">Beasiswa Akademik</option>
+                <option value="BeasiswaNonAkademik">Beasiswa Non Akademik</option>
+            </select><br>
+
+        <label for="foto">Upload Berkas Syarat (PDF/JPG/ZIP):</label>
+        <input type="file" id="foto" name="foto" accept=".pdf, .jpg, .jpeg, .zip" required><br>
+
+        <button class="btnsb" type="submit" name="daftar">Daftar</button>
+
+    </form>
+</body>
+</html>

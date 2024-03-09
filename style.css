@@ -1,0 +1,60 @@
+.nv1 {
+	gap: 25px;
+	margin-right: 30px;
+}
+
+.bks3 {
+
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 800px;
+  flex-wrap: wrap;
+}
+
+.txt20 {
+  margin-top: 20px;
+  display: inline-block;
+  border-top: 3px solid #00ff04;
+}
+
+.card1,
+.card2 {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 80px;
+}
+
+.card1 .a1,
+.card1 .b1,
+.card2 .a2,
+.card2 .b2 {
+  flex: 1;
+}
+
+.card1 h4 {
+  color: #00d451;
+}
+
+.card2 h4 {
+  color: #00d451;
+}
+
+.a1,
+.b1,
+.a2,
+.b2 {
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card1 .a1:hover,
+.card1 .b1:hover,
+.card2 .a2:hover,
+.card2 .b2:hover {
+  background-color: #f1f1f1;
+  transform: translateY(-5px);
+  transition: all 0.2s ease-in-out;
+}
